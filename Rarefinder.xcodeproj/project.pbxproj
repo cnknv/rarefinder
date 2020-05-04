@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012EB349245FCB230097AC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB348245FCB230097AC7C /* AppDelegate.swift */; };
+		012EB34B245FCB230097AC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34A245FCB230097AC7C /* SceneDelegate.swift */; };
+		012EB34D245FCB230097AC7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34C245FCB230097AC7C /* FirstViewController.swift */; };
+		012EB34F245FCB230097AC7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34E245FCB230097AC7C /* SecondViewController.swift */; };
+		012EB352245FCB230097AC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012EB350245FCB230097AC7C /* Main.storyboard */; };
+		012EB354245FCB250097AC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012EB353245FCB250097AC7C /* Assets.xcassets */; };
+		012EB357245FCB250097AC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012EB355245FCB250097AC7C /* LaunchScreen.storyboard */; };
+		012EB362245FCB250097AC7C /* RarefinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB361245FCB250097AC7C /* RarefinderTests.swift */; };
+		012EB36D245FCB250097AC7C /* RarefinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB36C245FCB250097AC7C /* RarefinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		012EB35E245FCB250097AC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012EB33D245FCB230097AC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012EB344245FCB230097AC7C;
+			remoteInfo = Rarefinder;
+		};
+		012EB369245FCB250097AC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 012EB33D245FCB230097AC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 012EB344245FCB230097AC7C;
+			remoteInfo = Rarefinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012EB345245FCB230097AC7C /* Rarefinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rarefinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		012EB348245FCB230097AC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		012EB34A245FCB230097AC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		012EB34C245FCB230097AC7C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		012EB34E245FCB230097AC7C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		012EB351245FCB230097AC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012EB353245FCB250097AC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		012EB356245FCB250097AC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		012EB358245FCB250097AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012EB35D245FCB250097AC7C /* RarefinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RarefinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		012EB361245FCB250097AC7C /* RarefinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarefinderTests.swift; sourceTree = "<group>"; };
+		012EB363245FCB250097AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012EB368245FCB250097AC7C /* RarefinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RarefinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		012EB36C245FCB250097AC7C /* RarefinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarefinderUITests.swift; sourceTree = "<group>"; };
+		012EB36E245FCB250097AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012EB342245FCB230097AC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB35A245FCB250097AC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB365245FCB250097AC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012EB33C245FCB230097AC7C = {
+			isa = PBXGroup;
+			children = (
+				012EB347245FCB230097AC7C /* Rarefinder */,
+				012EB360245FCB250097AC7C /* RarefinderTests */,
+				012EB36B245FCB250097AC7C /* RarefinderUITests */,
+				012EB346245FCB230097AC7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012EB346245FCB230097AC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012EB345245FCB230097AC7C /* Rarefinder.app */,
+				012EB35D245FCB250097AC7C /* RarefinderTests.xctest */,
+				012EB368245FCB250097AC7C /* RarefinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012EB347245FCB230097AC7C /* Rarefinder */ = {
+			isa = PBXGroup;
+			children = (
+				012EB348245FCB230097AC7C /* AppDelegate.swift */,
+				012EB34A245FCB230097AC7C /* SceneDelegate.swift */,
+				012EB34C245FCB230097AC7C /* FirstViewController.swift */,
+				012EB34E245FCB230097AC7C /* SecondViewController.swift */,
+				012EB350245FCB230097AC7C /* Main.storyboard */,
+				012EB353245FCB250097AC7C /* Assets.xcassets */,
+				012EB355245FCB250097AC7C /* LaunchScreen.storyboard */,
+				012EB358245FCB250097AC7C /* Info.plist */,
+			);
+			path = Rarefinder;
+			sourceTree = "<group>";
+		};
+		012EB360245FCB250097AC7C /* RarefinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				012EB361245FCB250097AC7C /* RarefinderTests.swift */,
+				012EB363245FCB250097AC7C /* Info.plist */,
+			);
+			path = RarefinderTests;
+			sourceTree = "<group>";
+		};
+		012EB36B245FCB250097AC7C /* RarefinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				012EB36C245FCB250097AC7C /* RarefinderUITests.swift */,
+				012EB36E245FCB250097AC7C /* Info.plist */,
+			);
+			path = RarefinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012EB344245FCB230097AC7C /* Rarefinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012EB371245FCB250097AC7C /* Build configuration list for PBXNativeTarget "Rarefinder" */;
+			buildPhases = (
+				012EB341245FCB230097AC7C /* Sources */,
+				012EB342245FCB230097AC7C /* Frameworks */,
+				012EB343245FCB230097AC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rarefinder;
+			productName = Rarefinder;
+			productReference = 012EB345245FCB230097AC7C /* Rarefinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		012EB35C245FCB250097AC7C /* RarefinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012EB374245FCB250097AC7C /* Build configuration list for PBXNativeTarget "RarefinderTests" */;
+			buildPhases = (
+				012EB359245FCB250097AC7C /* Sources */,
+				012EB35A245FCB250097AC7C /* Frameworks */,
+				012EB35B245FCB250097AC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				012EB35F245FCB250097AC7C /* PBXTargetDependency */,
+			);
+			name = RarefinderTests;
+			productName = RarefinderTests;
+			productReference = 012EB35D245FCB250097AC7C /* RarefinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		012EB367245FCB250097AC7C /* RarefinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012EB377245FCB250097AC7C /* Build configuration list for PBXNativeTarget "RarefinderUITests" */;
+			buildPhases = (
+				012EB364245FCB250097AC7C /* Sources */,
+				012EB365245FCB250097AC7C /* Frameworks */,
+				012EB366245FCB250097AC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				012EB36A245FCB250097AC7C /* PBXTargetDependency */,
+			);
+			name = RarefinderUITests;
+			productName = RarefinderUITests;
+			productReference = 012EB368245FCB250097AC7C /* RarefinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012EB33D245FCB230097AC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "John Kinav";
+				TargetAttributes = {
+					012EB344245FCB230097AC7C = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					012EB35C245FCB250097AC7C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 012EB344245FCB230097AC7C;
+					};
+					012EB367245FCB250097AC7C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 012EB344245FCB230097AC7C;
+					};
+				};
+			};
+			buildConfigurationList = 012EB340245FCB230097AC7C /* Build configuration list for PBXProject "Rarefinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012EB33C245FCB230097AC7C;
+			productRefGroup = 012EB346245FCB230097AC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012EB344245FCB230097AC7C /* Rarefinder */,
+				012EB35C245FCB250097AC7C /* RarefinderTests */,
+				012EB367245FCB250097AC7C /* RarefinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012EB343245FCB230097AC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012EB357245FCB250097AC7C /* LaunchScreen.storyboard in Resources */,
+				012EB354245FCB250097AC7C /* Assets.xcassets in Resources */,
+				012EB352245FCB230097AC7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB35B245FCB250097AC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB366245FCB250097AC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012EB341245FCB230097AC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012EB34F245FCB230097AC7C /* SecondViewController.swift in Sources */,
+				012EB34D245FCB230097AC7C /* FirstViewController.swift in Sources */,
+				012EB349245FCB230097AC7C /* AppDelegate.swift in Sources */,
+				012EB34B245FCB230097AC7C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB359245FCB250097AC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012EB362245FCB250097AC7C /* RarefinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		012EB364245FCB250097AC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012EB36D245FCB250097AC7C /* RarefinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		012EB35F245FCB250097AC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012EB344245FCB230097AC7C /* Rarefinder */;
+			targetProxy = 012EB35E245FCB250097AC7C /* PBXContainerItemProxy */;
+		};
+		012EB36A245FCB250097AC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 012EB344245FCB230097AC7C /* Rarefinder */;
+			targetProxy = 012EB369245FCB250097AC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		012EB350245FCB230097AC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012EB351245FCB230097AC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		012EB355245FCB250097AC7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012EB356245FCB250097AC7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012EB36F245FCB250097AC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		012EB370245FCB250097AC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012EB372245FCB250097AC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = Rarefinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.Rarefinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		012EB373245FCB250097AC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = Rarefinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.Rarefinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		012EB375245FCB250097AC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = RarefinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.RarefinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rarefinder.app/Rarefinder";
+			};
+			name = Debug;
+		};
+		012EB376245FCB250097AC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = RarefinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.RarefinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rarefinder.app/Rarefinder";
+			};
+			name = Release;
+		};
+		012EB378245FCB250097AC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = RarefinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.RarefinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rarefinder;
+			};
+			name = Debug;
+		};
+		012EB379245FCB250097AC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7PTT3CN33;
+				INFOPLIST_FILE = RarefinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jnknv.RarefinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rarefinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012EB340245FCB230097AC7C /* Build configuration list for PBXProject "Rarefinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012EB36F245FCB250097AC7C /* Debug */,
+				012EB370245FCB250097AC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012EB371245FCB250097AC7C /* Build configuration list for PBXNativeTarget "Rarefinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012EB372245FCB250097AC7C /* Debug */,
+				012EB373245FCB250097AC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012EB374245FCB250097AC7C /* Build configuration list for PBXNativeTarget "RarefinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012EB375245FCB250097AC7C /* Debug */,
+				012EB376245FCB250097AC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012EB377245FCB250097AC7C /* Build configuration list for PBXNativeTarget "RarefinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012EB378245FCB250097AC7C /* Debug */,
+				012EB379245FCB250097AC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012EB33D245FCB230097AC7C /* Project object */;
+}
