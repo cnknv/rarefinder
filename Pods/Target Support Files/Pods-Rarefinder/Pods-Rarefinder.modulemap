@@ -1,0 +1,6 @@
+framework module Pods_Rarefinder {
+  umbrella header "Pods-Rarefinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

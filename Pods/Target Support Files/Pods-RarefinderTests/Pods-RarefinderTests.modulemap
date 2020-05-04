@@ -1,0 +1,6 @@
+framework module Pods_RarefinderTests {
+  umbrella header "Pods-RarefinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
