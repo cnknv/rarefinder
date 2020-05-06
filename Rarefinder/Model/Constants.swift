@@ -20,6 +20,7 @@ class Constants {
     static let CATEGORIES = "Categories"
     static let CATEGORY = "Category"
     static let UNIQUE_ID = "unique_id"
+    static let STOREZ = "storez"
     static let STORE_NAME = "store_name"
     static let STORE_STREET_ADDRESS = "store_street_address"
     static let STORE_LAT = "store_lat"

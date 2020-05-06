@@ -61,12 +61,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-ND-O1c">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-ND-O1c">
+                                <rect key="frame" x="0.0" y="63" width="414" height="750"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="750" id="j0D-OO-qa9"/>
+                                </constraints>
                             </mapView>
+                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-u0-y3d">
+                                <rect key="frame" x="0.0" y="19" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PZt-ND-O1c" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="IZl-gu-LsL"/>
+                            <constraint firstItem="PZt-ND-O1c" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Q5l-zy-8ab"/>
+                            <constraint firstItem="PZt-ND-O1c" firstAttribute="trailing" secondItem="fKu-u0-y3d" secondAttribute="trailing" id="Wb5-0e-hu9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PZt-ND-O1c" secondAttribute="bottom" constant="-54" id="ZQ4-K6-5c4"/>
+                            <constraint firstItem="PZt-ND-O1c" firstAttribute="leading" secondItem="fKu-u0-y3d" secondAttribute="leading" id="cED-H4-Grk"/>
+                            <constraint firstItem="PZt-ND-O1c" firstAttribute="top" secondItem="fKu-u0-y3d" secondAttribute="bottom" id="cz7-Dc-y9R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>

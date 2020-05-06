@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -20,12 +21,32 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
          
           
       }
+    
+    
+    func storeAdder() {
+        
+        
+        Dbprovider.Instance.storeRef.observeSingleEvent(of: .value) { (snapshot) in
+            
+            if let result = snapshot.children.allObjects as? [DataSnapshot] {
+                
+             
+                //store data comes baby
+                
+                
+                print(result)
+        
+            }
+    }
+    }
  
 
     override func viewDidLoad() {
         super.viewDidLoad()
       
 //      myLoc()
+        
+        storeAdder()
        locManager.startUpdatingLocation()
   
   locManager.delegate = self
@@ -48,9 +69,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                  locManager.stopUpdatingLocation()
          
      }
-     
-    
-  
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 
 
 }

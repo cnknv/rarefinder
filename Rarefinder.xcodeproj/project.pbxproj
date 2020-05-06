@@ -20,6 +20,7 @@
 		012EB362245FCB250097AC7C /* RarefinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB361245FCB250097AC7C /* RarefinderTests.swift */; };
 		012EB36D245FCB250097AC7C /* RarefinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB36C245FCB250097AC7C /* RarefinderUITests.swift */; };
 		012EB37B245FCE030097AC7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012EB37A245FCE030097AC7C /* GoogleService-Info.plist */; };
+		012ED1D624626551000696CB /* DbProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ED1D524626551000696CB /* DbProvider.swift */; };
 		01415F992460F16900F2BAD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415F982460F16900F2BAD7 /* Constants.swift */; };
 		01415F9E2460F64100F2BAD7 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415F9D2460F64100F2BAD7 /* AuthProvider.swift */; };
 		01415FA22460F6EF00F2BAD7 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415FA12460F6EF00F2BAD7 /* Alerts.swift */; };
@@ -67,6 +68,7 @@
 		012EB36C245FCB250097AC7C /* RarefinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarefinderUITests.swift; sourceTree = "<group>"; };
 		012EB36E245FCB250097AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012EB37A245FCE030097AC7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		012ED1D524626551000696CB /* DbProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbProvider.swift; sourceTree = "<group>"; };
 		01415F982460F16900F2BAD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01415F9D2460F64100F2BAD7 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		01415FA12460F6EF00F2BAD7 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				01415F9D2460F64100F2BAD7 /* AuthProvider.swift */,
+				012ED1D524626551000696CB /* DbProvider.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012ED1D624626551000696CB /* DbProvider.swift in Sources */,
 				0127BADF2460D38000411C81 /* LoginViewController.swift in Sources */,
 				012EB34F245FCB230097AC7C /* SecondViewController.swift in Sources */,
 				012EB34D245FCB230097AC7C /* MapViewController.swift in Sources */,
