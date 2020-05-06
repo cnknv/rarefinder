@@ -28,6 +28,7 @@
 		7B2FD4E7A721D9EF1E156389 /* Pods_RarefinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46643B6EE9DCE3780C39B94C /* Pods_RarefinderTests.framework */; };
 		B9D36AC894CC4637EA48FCB9 /* Pods_Rarefinder_RarefinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464E7AC9933E21BBBCE7599E /* Pods_Rarefinder_RarefinderUITests.framework */; };
 		C8ED0C8A5314B6486D2DF1D9 /* Pods_Rarefinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014AE6E6D50D0EA527D2798 /* Pods_Rarefinder.framework */; };
+		FF479A152462754F00CFAF90 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF479A142462754F00CFAF90 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		54D879641626A8E6123826B0 /* Pods-RarefinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RarefinderTests.release.xcconfig"; path = "Target Support Files/Pods-RarefinderTests/Pods-RarefinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		8CFB4C7274F8EA7C22381C76 /* Pods-Rarefinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rarefinder.debug.xcconfig"; path = "Target Support Files/Pods-Rarefinder/Pods-Rarefinder.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1425F029EA5526830B4473 /* Pods-Rarefinder-RarefinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rarefinder-RarefinderUITests.release.xcconfig"; path = "Target Support Files/Pods-Rarefinder-RarefinderUITests/Pods-Rarefinder-RarefinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF479A142462754F00CFAF90 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				01415F982460F16900F2BAD7 /* Constants.swift */,
+				FF479A142462754F00CFAF90 /* Store.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				01415FA42460F6FF00F2BAD7 /* Checkmark.swift in Sources */,
 				0127BADD2460D37200411C81 /* SigninViewController.swift in Sources */,
 				012EB349245FCB230097AC7C /* AppDelegate.swift in Sources */,
+				FF479A152462754F00CFAF90 /* Store.swift in Sources */,
 				0127BADB2460D09D00411C81 /* QuickStartViewController.swift in Sources */,
 				01415FA22460F6EF00F2BAD7 /* Alerts.swift in Sources */,
 				01415F9E2460F64100F2BAD7 /* AuthProvider.swift in Sources */,
