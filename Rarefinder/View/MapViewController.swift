@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  MapViewController.swift
 //  Rarefinder
 //
 //  Created by can kinav on 5/3/20.
@@ -10,10 +10,10 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+final class MapViewController: UIViewController, CLLocationManagerDelegate {
     
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet private weak var mapView: MKMapView!
     
      var locManager = CLLocationManager()
    
@@ -32,8 +32,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 
              
                 //store data comes baby
-                
-                
+                var storeList: [Store] = []
+                for dataSnapshot in result {
+                    guard let dict = dataSnapshot.value as? [String: Any] else {
+                        continue
+                    }
+                    storeList.append(Store(using: dict))
+                }
                 print(result)
         
             }
