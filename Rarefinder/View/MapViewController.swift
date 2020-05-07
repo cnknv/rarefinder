@@ -131,10 +131,10 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
     view.calloutOffset = CGPoint(x: -5, y: 5)
    
     
-    let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,
-                                            size: CGSize(width: 30, height: 30)))
-    mapsButton.setBackgroundImage(UIImage(named: "Maps-icon"), for: UIControl.State())
-    view.rightCalloutAccessoryView = mapsButton
+//    let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,
+//                                            size: CGSize(width: 30, height: 30)))
+//   mapsButton.setBackgroundImage(UIImage(named: "Maps-icon"), for: UIControl.State())
+// view.rightCalloutAccessoryView = mapsButton
    
     
     view.markerTintColor = UIColor(displayP3Red: 29/255, green: 95/255, blue: 141/255, alpha: 1)
