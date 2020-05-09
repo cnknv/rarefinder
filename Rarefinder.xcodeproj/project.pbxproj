@@ -11,7 +11,6 @@
 		0127BADD2460D37200411C81 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127BADC2460D37200411C81 /* SigninViewController.swift */; };
 		0127BADF2460D38000411C81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127BADE2460D38000411C81 /* LoginViewController.swift */; };
 		012EB349245FCB230097AC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB348245FCB230097AC7C /* AppDelegate.swift */; };
-		012EB34B245FCB230097AC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34A245FCB230097AC7C /* SceneDelegate.swift */; };
 		012EB34D245FCB230097AC7C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34C245FCB230097AC7C /* MapViewController.swift */; };
 		012EB34F245FCB230097AC7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EB34E245FCB230097AC7C /* SecondViewController.swift */; };
 		012EB352245FCB230097AC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012EB350245FCB230097AC7C /* Main.storyboard */; };
@@ -55,7 +54,6 @@
 		0127BADE2460D38000411C81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		012EB345245FCB230097AC7C /* Rarefinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rarefinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		012EB348245FCB230097AC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		012EB34A245FCB230097AC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		012EB34C245FCB230097AC7C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		012EB34E245FCB230097AC7C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		012EB351245FCB230097AC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				01415F9A2460F5A700F2BAD7 /* View */,
 				01415F9B2460F5C400F2BAD7 /* Model */,
 				012EB348245FCB230097AC7C /* AppDelegate.swift */,
-				012EB34A245FCB230097AC7C /* SceneDelegate.swift */,
 				012EB350245FCB230097AC7C /* Main.storyboard */,
 				012EB353245FCB250097AC7C /* Assets.xcassets */,
 				012EB355245FCB250097AC7C /* LaunchScreen.storyboard */,
@@ -492,7 +489,6 @@
 				0127BADB2460D09D00411C81 /* QuickStartViewController.swift in Sources */,
 				01415FA22460F6EF00F2BAD7 /* Alerts.swift in Sources */,
 				01415F9E2460F64100F2BAD7 /* AuthProvider.swift in Sources */,
-				012EB34B245FCB230097AC7C /* SceneDelegate.swift in Sources */,
 				01415F992460F16900F2BAD7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,7 +594,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -652,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
