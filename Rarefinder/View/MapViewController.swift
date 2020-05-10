@@ -52,7 +52,7 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
                                    self.mapView.addAnnotation(storeAnn)
                                }
 
-     print(storeList)
+    
          }
  }
  
