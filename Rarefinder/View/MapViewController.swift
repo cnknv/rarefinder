@@ -143,5 +143,3 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
 
 
 }
-
-

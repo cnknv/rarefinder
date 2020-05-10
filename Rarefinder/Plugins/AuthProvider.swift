@@ -81,8 +81,8 @@ class AuthProvider {
     
     
     func saveWithID(withEmail: String, withPassword: String, withData: [Any] ){
-//        let userID = Auth.auth().currentUser?.uid
-//        Dbprovider.Instance.saveUser(withID: userID!, Email: withEmail, Password: withPassword, userData: withData)
+        let userID = Auth.auth().currentUser?.uid
+        Dbprovider.Instance.saveUser(withID: userID!, Email: withEmail, Password: withPassword, userData: withData)
         
         
         

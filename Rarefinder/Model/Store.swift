@@ -14,13 +14,13 @@ struct Store {
     let name: String
     let address: String
     let lat: Double
-     let long: Double
+    let long: Double
     // TODO: Add other properties
     
     init(_ dict: [String: Any]) {
-        self.address = dict["store_street_address"] as? String ?? ""
-        self.name = dict["store_name"] as? String ?? ""
-        self.lat = dict["store_lat"] as? Double ?? 0.0
-        self.long = dict["store_lon"] as? Double ?? 0.0
+        self.address = dict[Constants.STORE_STREET_ADDRESS] as? String ?? ""
+        self.name = dict[Constants.STORE_NAME] as? String ?? ""
+        self.lat = dict[Constants.STORE_LAT] as? Double ?? 0.0
+        self.long = dict[Constants.STORE_LONG] as? Double ?? 0.0
     }
 }

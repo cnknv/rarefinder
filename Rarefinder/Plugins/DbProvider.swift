@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 
@@ -29,6 +29,26 @@ static var Instance: Dbprovider {
         return dBRef.child(Constants.STOREZ)
         
     }
+    
+    var userRef: DatabaseReference {
+         
+         return dBRef.child(Constants.USERS)
+     }
+     
+     var userInfoRef: DatabaseReference {
+         let userID = Auth.auth().currentUser?.uid
+         
+         return dBRef.child(Constants.USERS).child(userID!)
+     }
+    
+  func saveUser(withID:String, Email: String, Password: String, userData: [Any]){
+       
+           
+           let data: Dictionary  = [ Constants.EMAIL:Email, Constants.FIRST_NAME:userData[0], Constants.LAST_NAME:userData[1], Constants.PHONE_NUMBER:userData[2], Constants.USER_AGREEMENT_SIGNED:userData[3] ]
+           
+           userRef.child(withID).setValue(data)
+           
+       }
     
     
     
