@@ -11,9 +11,10 @@ import MapKit
 import FirebaseDatabase
 
 final class MapViewController: UIViewController, CLLocationManagerDelegate {
+     private let PRODUCT_LIST_SEGUE = "productlistsegue"
     
 
-    @IBOutlet private weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     
      var locManager = CLLocationManager()
    
@@ -75,6 +76,7 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
   locManager.delegate = self
            locManager.desiredAccuracy = kCLLocationAccuracyBest
            locManager.requestWhenInUseAuthorization()
+        mapView.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -131,13 +133,42 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
     view.calloutOffset = CGPoint(x: -5, y: 5)
    
     
-    view.markerTintColor = UIColor(displayP3Red: 29/255, green: 95/255, blue: 141/255, alpha: 1)
+    let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,
+                                            size: CGSize(width: 30, height: 30)))
+    mapsButton.setBackgroundImage(UIImage(named: "Map-icon"), for: UIControl.State())
+    view.rightCalloutAccessoryView = mapsButton
+   
+    
+    view.markerTintColor = UIColor(displayP3Red: 255/255, green: 4/255, blue: 158/255, alpha: 1)
 
     
         }
         
 
         return view
+    }
+    
+
+    
+    
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
+          let location = view.annotation?.coordinate
+
+        let placemark = MKPlacemark(coordinate: location!, addressDictionary:nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = (view.annotation?.title)!
+        
+        performSegue(withIdentifier: self.PRODUCT_LIST_SEGUE , sender: nil)
+       
+      
+        
+        
+        
+
+        
+        
     }
     
 

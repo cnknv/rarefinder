@@ -29,6 +29,24 @@ class Constants {
     static let STORE_REGION = "st_state"
     static let STORE_POSTAL_CODE = "st_pc"
     static let STORE_PHONE = "st_phn"
+    static let PRODUCT_LIST = "products"
+    
+//   static let  "Toilet Paper"
+//     static let "Paper Towel"
+//     static let "Hand Sanitizer"
+//      static let "Ground Beef"
+//     static let "Stew Meat"
+//     static let "Pork"
+//     static let "Chicken Drumsticks"
+//     static let "Eggs"
+//     static let "Milk"
+//     static let "Bleach"
+//     static let "Disinfectant Wipes"
+//     static let "Hand Soap"
+//     static let "Pasta"
+//     static let "Flour"
+//     static let "Water"
+//     static let "Bread"
 
     
     

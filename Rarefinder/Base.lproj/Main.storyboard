@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-542.02898550724638" y="-688.39285714285711"/>
         </scene>
-        <!--First-->
+        <!--find it!-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="9pv-A4-QxB" customClass="MapViewController" customModule="Rarefinder" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,30 +95,55 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="find it!" image="cart.fill" catalog="system" landscapeImage="cart.fill" id="acW-dT-cKf">
+                        <color key="badgeColor" red="0.99502807859999998" green="0.0" blue="0.6196255088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="mapView" destination="PZt-ND-O1c" id="SM9-TI-cKc"/>
+                        <segue destination="xjs-dx-WXm" kind="presentation" identifier="productlistsegue" modalPresentationStyle="currentContext" id="5W6-6p-3MA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Product List View Controller-->
         <scene sceneID="hOT-AW-3d0">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="xjs-dx-WXm" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="xjs-dx-WXm" customClass="ProductListViewController" customModule="Rarefinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y5b-BP-KFK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="AmL-Bt-Qf5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem id="I7A-Tx-xIa">
+                                    <barButtonItem key="leftBarButtonItem" title="Back" id="pHm-2c-NNb">
+                                        <connections>
+                                            <action selector="backButton:" destination="xjs-dx-WXm" id="D1o-F9-yfn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HTo-u3-bfT">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="43" id="HTo-u3-bfT">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HTo-u3-bfT" id="5o8-3q-0Bq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnp-l5-Ffy">
+                                            <rect key="frame" x="20" y="11" width="301" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -127,12 +152,15 @@
                             <outlet property="delegate" destination="xjs-dx-WXm" id="mTk-Qc-bsK"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="navBar" destination="AmL-Bt-Qf5" id="VXv-5V-Ohn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agO-Mq-f9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="-318"/>
+            <point key="canvasLocation" x="1591.304347826087" y="-318.08035714285711"/>
         </scene>
-        <!--Second-->
+        <!--Settings-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Rarefinder" customModuleProvider="target" sceneMemberID="viewController">
@@ -161,7 +189,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" landscapeImage="gear" id="cPa-gy-q4n">
+                        <color key="badgeColor" red="0.99502807859999998" green="0.0" blue="0.6196255088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,6 +377,8 @@ some groceries</string>
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99502807859999998" green="0.0" blue="0.6196255088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.99502807859999998" green="0.0" blue="0.6196255088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -360,7 +392,7 @@ some groceries</string>
     </scenes>
     <resources>
         <image name="Image" width="146.5" height="66"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cart.fill" catalog="system" width="64" height="50"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
     </resources>
 </document>
