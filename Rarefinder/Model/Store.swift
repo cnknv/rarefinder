@@ -16,6 +16,7 @@ struct Store {
     let lat: Double
     let long: Double
 
+
     // TODO: Add other properties
     
     init(_ dict: [String: Any]) {
@@ -23,6 +24,8 @@ struct Store {
         self.name = dict[Constants.STORE_NAME] as? String ?? ""
         self.lat = dict[Constants.STORE_LAT] as? Double ?? 0.0
         self.long = dict[Constants.STORE_LONG] as? Double ?? 0.0
+    
+       
        
     }
 }

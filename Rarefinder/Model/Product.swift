@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import FirebaseDatabase
+
 struct Product {
+    
+    let toiletPaper: Int
+    let paperTowel: Int
+  
+
+      // TODO: Add other properties
+      
+      init(_ dict: [String: Any]) {
+        self.toiletPaper = dict[Constants.TOILET_PAPER] as? Int ?? 1
+        self.paperTowel = dict[Constants.PAPER_TOWEL] as? Int ?? 1
+        
+    }
     
     
 //    Toilet Paper
@@ -26,5 +40,5 @@ struct Product {
 //     Flour
 //     Water
 //     Bread
-//    }
+
 }

@@ -31,8 +31,10 @@ class Constants {
     static let STORE_PHONE = "st_phn"
     static let PRODUCT_LIST = "products"
     
-//   static let  "Toilet Paper"
-//     static let "Paper Towel"
+    // PRODUCT LIST
+    
+    static let TOILET_PAPER = "Toilet Paper"
+    static let PAPER_TOWEL = "Paper Towel"
 //     static let "Hand Sanitizer"
 //      static let "Ground Beef"
 //     static let "Stew Meat"

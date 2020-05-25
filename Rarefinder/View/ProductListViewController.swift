@@ -9,7 +9,7 @@
 import UIKit
 
 class ProductListViewController: UITableViewController {
-    var navTitle = "Store Name"
+    var navTitle = " "
     
     @IBOutlet weak var navBar: UINavigationBar!
     
@@ -50,6 +50,7 @@ class ProductListViewController: UITableViewController {
     
 
               cell.textLabel?.text = labels[indexPath.row]
+        cell.detailTextLabel?.text = "Updated 1 hour ago"
 
         return cell
     }

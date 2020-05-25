@@ -15,6 +15,7 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
     
 
     @IBOutlet weak var mapView: MKMapView!
+    var anotationTitle = " "
     
      var locManager = CLLocationManager()
    
@@ -46,11 +47,13 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
             
                                    let latitude: CLLocationDegrees = store.lat
                                    let longitude: CLLocationDegrees = store.long
+                   
                                    let subtitle = store.address
                                    let name = store.name
                                    let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
                                    let storeAnn = MyAnnotation(title: name, coordinate: location, subtitle: subtitle)
                                    self.mapView.addAnnotation(storeAnn)
+                    
                                }
 
     
@@ -159,17 +162,44 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
         let placemark = MKPlacemark(coordinate: location!, addressDictionary:nil)
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = (view.annotation?.title)!
+        self.anotationTitle = mapItem.name!
+        Dbprovider.Instance.storeRef.queryOrdered(byChild: Constants.STORE_NAME).queryEqual(toValue: mapItem.name!).observeSingleEvent(of: .value) { (snapshot) in
+            var productList: [Product] = []
+          
+            let productData = snapshot.children.allObjects as? [DataSnapshot]
+            
+            for dataSnapshot in productData! {
+                guard let productDict = dataSnapshot.childSnapshot(forPath: Constants.PRODUCT_LIST).value as? [String:Any] else {
+                                         continue
+                                     }
+            
+            
+                productList.append(Product(productDict))
+                print(productList)
+                                 } // product list retrieve
+            
+        }
         
         performSegue(withIdentifier: self.PRODUCT_LIST_SEGUE , sender: nil)
-       
-      
-        
-        
-        
 
         
-        
     }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            
+            if segue.identifier == PRODUCT_LIST_SEGUE {
+                
+            
+            let destVC = segue.destination as! ProductListViewController
+
+
+                destVC.navTitle = anotationTitle
+                
+              
+            }
+           
+        }
     
 
 
