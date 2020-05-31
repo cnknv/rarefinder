@@ -27,6 +27,8 @@
 		01415F9E2460F64100F2BAD7 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415F9D2460F64100F2BAD7 /* AuthProvider.swift */; };
 		01415FA22460F6EF00F2BAD7 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415FA12460F6EF00F2BAD7 /* Alerts.swift */; };
 		01415FA42460F6FF00F2BAD7 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01415FA32460F6FF00F2BAD7 /* Checkmark.swift */; };
+		01AE92AD24834379002BFB99 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE92AC24834379002BFB99 /* StartViewController.swift */; };
+		01AE92AF2484053A002BFB99 /* UserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE92AE2484053A002BFB99 /* UserAgreementViewController.swift */; };
 		7B2FD4E7A721D9EF1E156389 /* Pods_RarefinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46643B6EE9DCE3780C39B94C /* Pods_RarefinderTests.framework */; };
 		B9D36AC894CC4637EA48FCB9 /* Pods_Rarefinder_RarefinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464E7AC9933E21BBBCE7599E /* Pods_Rarefinder_RarefinderUITests.framework */; };
 		C8ED0C8A5314B6486D2DF1D9 /* Pods_Rarefinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014AE6E6D50D0EA527D2798 /* Pods_Rarefinder.framework */; };
@@ -78,6 +80,8 @@
 		01415F9D2460F64100F2BAD7 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		01415FA12460F6EF00F2BAD7 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		01415FA32460F6FF00F2BAD7 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		01AE92AC24834379002BFB99 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		01AE92AE2484053A002BFB99 /* UserAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementViewController.swift; sourceTree = "<group>"; };
 		34DDDBCFB9B64FF5CAE077EC /* Pods-Rarefinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rarefinder.release.xcconfig"; path = "Target Support Files/Pods-Rarefinder/Pods-Rarefinder.release.xcconfig"; sourceTree = "<group>"; };
 		39BBAE6127E38688B36EF94F /* Pods-Rarefinder-RarefinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rarefinder-RarefinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rarefinder-RarefinderUITests/Pods-Rarefinder-RarefinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		464E7AC9933E21BBBCE7599E /* Pods_Rarefinder_RarefinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rarefinder_RarefinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +188,8 @@
 				012EB34E245FCB230097AC7C /* SecondViewController.swift */,
 				0127BADA2460D09D00411C81 /* QuickStartViewController.swift */,
 				01226D62246A4D6800B68ABE /* ProductListViewController.swift */,
+				01AE92AC24834379002BFB99 /* StartViewController.swift */,
+				01AE92AE2484053A002BFB99 /* UserAgreementViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,12 +494,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0104C7C72467AEBD002015E3 /* User.swift in Sources */,
+				01AE92AD24834379002BFB99 /* StartViewController.swift in Sources */,
 				012ED1D624626551000696CB /* DbProvider.swift in Sources */,
 				0127BADF2460D38000411C81 /* LoginViewController.swift in Sources */,
 				012EB34F245FCB230097AC7C /* SecondViewController.swift in Sources */,
 				012EB34D245FCB230097AC7C /* MapViewController.swift in Sources */,
 				01415FA42460F6FF00F2BAD7 /* Checkmark.swift in Sources */,
 				0127BADD2460D37200411C81 /* SigninViewController.swift in Sources */,
+				01AE92AF2484053A002BFB99 /* UserAgreementViewController.swift in Sources */,
 				01226D63246A4D6800B68ABE /* ProductListViewController.swift in Sources */,
 				012EB349245FCB230097AC7C /* AppDelegate.swift in Sources */,
 				FF479A152462754F00CFAF90 /* Store.swift in Sources */,
