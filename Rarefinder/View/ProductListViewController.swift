@@ -8,12 +8,21 @@
 
 import UIKit
 
+class MyCustomTableViewCell: UITableViewCell {
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productCount: UILabel!
+}
+
 class ProductListViewController: UITableViewController {
     var navTitle = " "
+    var storeProductList: [Product] = []
     
     @IBOutlet weak var navBar: UINavigationBar!
     
-    var labels  = [ "Toilet Paper", "Paper Towel", "Hand Sanitizer", "Ground Beef", "Stew Meat", "Pork", "Chicken Drumsticks", "Eggs", "Milk", "Bleach", "Disinfectant Wipes", "Hand Soap", "Pasta", "Flour", "Water Bread"]
+
+    
+    var labels  = [String]()
+     var counts  = [Int]()
     @IBAction func backButton(_ sender: Any) {
         
          dismiss(animated: true, completion: nil)
@@ -22,6 +31,7 @@ class ProductListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.topItem?.title = navTitle
+
     
 
         // Uncomment the following line to preserve selection between presentations
@@ -45,12 +55,15 @@ class ProductListViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! MyCustomTableViewCell
 
-    
-
-              cell.textLabel?.text = labels[indexPath.row]
-        cell.detailTextLabel?.text = "Updated 1 hour ago"
+        cell.productName?.text =  labels[indexPath.row]
+        cell.productCount?.text = String(counts[indexPath.row])
+        
+        
+//              cell.textLabel?.text = labels[indexPath.row]
+//        cell.detailTextLabel?.text = "Updated 1 hour ago"
+        
 
         return cell
     }

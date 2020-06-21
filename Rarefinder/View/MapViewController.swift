@@ -16,6 +16,7 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var anotationTitle = " "
+       let productListVC = ProductListViewController()
     
      var locManager = CLLocationManager()
    
@@ -23,6 +24,8 @@ final class MapViewController: UIViewController, CLLocationManagerDelegate {
          
           
       }
+    
+ 
     
     
      
@@ -152,36 +155,23 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
     }
     
 
-    
+
     
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
           let location = view.annotation?.coordinate
+        
 
         let placemark = MKPlacemark(coordinate: location!, addressDictionary:nil)
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = (view.annotation?.title)!
         self.anotationTitle = mapItem.name!
-        Dbprovider.Instance.storeRef.queryOrdered(byChild: Constants.STORE_NAME).queryEqual(toValue: mapItem.name!).observeSingleEvent(of: .value) { (snapshot) in
-            var productList: [Product] = []
-          
-            let productData = snapshot.children.allObjects as? [DataSnapshot]
-            
-            for dataSnapshot in productData! {
-                guard let productDict = dataSnapshot.childSnapshot(forPath: Constants.PRODUCT_LIST).value as? [String:Any] else {
-                                         continue
-                                     }
-            
-            
-                productList.append(Product(productDict))
-                print(productList)
-                                 } // product list retrieve
-            
-        }
+      Dbprovider.Instance.productListRetriever(withAnnotationName: mapItem.name!)
         
         performSegue(withIdentifier: self.PRODUCT_LIST_SEGUE , sender: nil)
-
+        
+        
         
     }
     
@@ -196,6 +186,9 @@ else {  view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: i
 
                 destVC.navTitle = anotationTitle
                 
+              
+                
+               
               
             }
            
