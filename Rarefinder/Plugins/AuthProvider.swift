@@ -28,7 +28,7 @@ class AuthProvider {
         return _instance
         
     }
-    
+   
     
     func signUp(withEmail: String, withPassword: String, withUserData: [Any], loginHandler: LoginHandler?) {
         Auth.auth().createUser(withEmail: withEmail, password: withPassword, completion: {(user, error) in
@@ -71,13 +71,42 @@ class AuthProvider {
         
         
     } // send mail
+ 
+    func changePassword(currentPassword: String, newPassword: String, completion: @escaping (Error?) -> Void) {
+        let userEmail = (Auth.auth().currentUser?.email)!
+
+        let credential = EmailAuthProvider.credential(withEmail: userEmail, password: currentPassword)
+
+
+            Auth.auth().currentUser?.reauthenticate(with: credential, completion: { (result, error) in
+                if let error = error {
+                    completion(error)
+                }
+                else {
+                    Auth.auth().currentUser?.updatePassword(to: newPassword, completion: { (error) in
+                        completion(error)
+                    })
+                }
+            })
+        }
     
-    func changePassword(withPassword: String){
+    func resetPassword(userEmail:String, completion: @escaping (Error?) -> Void) {
         
-        Auth.auth().currentUser?.updatePassword(to: withPassword) { (error) in
+        Auth.auth().sendPasswordReset(withEmail: userEmail) { (error) in
+                completion(error)
+              
             
         }
+        
     }
+    
+    
+
+    
+ 
+    
+    
+
     
     
     func saveWithID(withEmail: String, withPassword: String, withData: [Any] ){
@@ -104,6 +133,8 @@ class AuthProvider {
         return true
         
     } //log out
+    
+   
     
     
     
@@ -134,5 +165,5 @@ class AuthProvider {
         
     }//handleErrors func
     
-    
+
 }// AuthProvider Class

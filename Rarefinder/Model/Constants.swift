@@ -22,14 +22,16 @@ class Constants {
     static let UNIQUE_ID = "unique_id"
     static let STOREZ = "storez"
     static let STORE_NAME = "st_nm"
-    static let STORE_STREET_ADDRESS = "str_adr"
+    static let STORE_STREET_ADDRESS = "st_adr"
     static let STORE_LAT = "st_lat"
     static let STORE_LONG = "st_long"
     static let STORE_ADDRESS_LOC = "st_city"
     static let STORE_REGION = "st_state"
     static let STORE_POSTAL_CODE = "st_pc"
     static let STORE_PHONE = "st_phn"
-    static let PRODUCT_LIST = "products"
+    static let PRODUCT_LIST = "product_list"
+    static let PRODUCTS = "products"
+    static let STORE_UID = "st_uid"
     
     // PRODUCT LIST
     

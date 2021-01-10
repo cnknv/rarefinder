@@ -25,12 +25,10 @@ class SigninViewController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
         
-        let userData : [Any] = [firstNameField.text!, lastNameField.text!, phoneNumberField.text!, checkMark.isChecked ]
+        let userData : [Any] = [firstNameField.text!, lastNameField.text!, phoneNumberField.text! ]
                
                if emailField.text != nil && passwordField.text != nil {
-                   
-                   if checkMark.isChecked == true {
-                   
+
                    AuthProvider.Instance.signUp(withEmail: emailField.text!, withPassword: passwordField.text!, withUserData: userData, loginHandler:  { (message) in
                        if message != nil {
                            
@@ -38,14 +36,10 @@ class SigninViewController: UIViewController {
                        } else {
                            self.alertTheUser(title: "E-mail Verification", message: "Verification e-mail has been sent your e-mail address", success: true )
                            
-                           
                        }
                    })
                    
-               } else {
-                    alertTheUser(title: "User Agreement", message: "Please read and accept user agreement", success:false )
-                 
-               }
+          
                }
                
                else {
@@ -57,6 +51,8 @@ class SigninViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+         view.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }

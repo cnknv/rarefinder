@@ -30,6 +30,11 @@ static var Instance: Dbprovider {
         
     }
     
+    var productRef: DatabaseReference {
+        return dBRef.child(Constants.PRODUCTS)
+         
+     }
+    
     var userRef: DatabaseReference {
          
          return dBRef.child(Constants.USERS)
@@ -44,42 +49,37 @@ static var Instance: Dbprovider {
   func saveUser(withID:String, Email: String, Password: String, userData: [Any]){
        
            
-           let data: Dictionary  = [ Constants.EMAIL:Email, Constants.FIRST_NAME:userData[0], Constants.LAST_NAME:userData[1], Constants.PHONE_NUMBER:userData[2], Constants.USER_AGREEMENT_SIGNED:userData[3] ]
+           let data: Dictionary  = [ Constants.EMAIL:Email, Constants.FIRST_NAME:userData[0], Constants.LAST_NAME:userData[1], Constants.PHONE_NUMBER:userData[2] ]
            
            userRef.child(withID).setValue(data)
            
        }
     
-     var productList: [Product] = []
-        func productListRetriever(withAnnotationName:String) {
-           
-          storeRef.queryOrdered(byChild: Constants.STORE_NAME).queryEqual(toValue: withAnnotationName).observeSingleEvent(of: .value) { (snapshot) in
-                        
+    func productListSaver(withStoreUID: String, withProductName: String, withProductCount:Int){
 
-                      
-                        let productData = snapshot.children.allObjects as? [DataSnapshot]
-                        
-                        for dataSnapshot in productData! {
-                            guard let productDict = dataSnapshot.childSnapshot(forPath: Constants.PRODUCT_LIST).value as? [String:Any] else {
-                                                     continue
-                                                 }
-                        
-
-                            self.productList.append(Product(productDict))
-                            
-                           
-                            
-
-                                             }
-            print(self.productList)
-            
-                 
-            }
-            
         
-            
-            
-        }
+      productRef.child(withStoreUID).child(Constants.PRODUCT_LIST).child(withProductName).setValue(withProductCount)
+      
+
+    }
+    
+//    func productListAdder(withStoreUID: String, productData:Dictionary<String, Int>){
+//
+//
+//        productRef.child(withStoreUID).child(Constants.PRODUCT_LIST).setValue(productData)
+//
+//
+//    }
+    
+    
+    
+
+    
+
+    
+
+    
+   
     
 
 } // class ends
